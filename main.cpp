@@ -19,3 +19,11 @@ void adicionarCliente() {
 
     printf("Cliente adicionado!\n");
 }
+void chamarProximo() {
+    if (inicio == fim) {
+        printf("Fila vazia!\n");
+        return;
+    }
+
+    printf("Proximo cliente: %s\n", fila[inicio]);
+}
