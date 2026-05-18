@@ -31,5 +31,7 @@ void removerCliente() {
     if (inicio == fim) {
         printf("Fila vazia!\n");
         return;
-    }}
-    
+    }
+printf("Cliente atendido: %s\n", fila[inicio]);
+    inicio++;
+}
