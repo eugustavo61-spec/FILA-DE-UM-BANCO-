@@ -35,3 +35,15 @@ void removerCliente() {
 printf("Cliente atendido: %s\n", fila[inicio]);
     inicio++;
 }
+void visualizarFila() {
+    if (inicio == fim) {
+        printf("Fila vazia!\n");
+        return;
+    }
+
+    printf("\n--- FILA ---\n");
+
+    for (int i = inicio; i < fim; i++) {
+        printf("%d - %s\n", i - inicio + 1, fila[i]);
+    }
+}
