@@ -27,3 +27,9 @@ void chamarProximo() {
 
     printf("Proximo cliente: %s\n", fila[inicio]);
 }
+void removerCliente() {
+    if (inicio == fim) {
+        printf("Fila vazia!\n");
+        return;
+    }}
+    
