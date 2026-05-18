@@ -47,3 +47,39 @@ void visualizarFila() {
         printf("%d - %s\n", i - inicio + 1, fila[i]);
     }
 }
+int main() {
+    int opcao;
+
+    do {
+        printf("\n1 - Adicionar cliente\n");
+        printf("2 - Chamar proximo\n");
+        printf("3 - Remover atendido\n");
+        printf("4 - Ver fila\n");
+        printf("0 - Sair\n");
+        printf("Escolha: ");
+        scanf("%d", &opcao);
+
+        switch(opcao) {
+            case 1:
+                adicionarCliente();
+                break;
+            case 2:
+                chamarProximo();
+                break;
+            case 3:
+                removerCliente();
+                break;
+            case 4:
+                visualizarFila();
+                break;
+            case 0:
+                printf("Encerrando...\n");
+                break;
+            default:
+                printf("Opcao invalida!\n");
+        }
+
+    } while(opcao != 0);
+
+    return 0;
+}
